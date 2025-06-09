@@ -3,7 +3,7 @@
 	<p>
 		<br>Soy Romanda <br> Este es mi primer sitio web y está en construcción. 
 <br>
-Pronto más novedades.
+Pronto más novedades aquí.
 <br>
 <?php
 date_default_timezone_set('europe/madrid');
