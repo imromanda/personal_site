@@ -1,8 +1,61 @@
-h1, h2, h3 {
-    background-color: beige;
-    font-family: "freestyle script";
+:root {
+    --prussian-blue: #003349;
+    --viridian-green: #00939D;
+    --paolo-veronese-green: #009D85;
+    --quinacridone-magenta: #934054;
+    --dark-salmon: #EAA794;
+    --buff: #EED484;
+    --true-white: #EEEEEE;
+    --night-black: #313131;
 }
-p {
-    font-family: rawengulksans; 
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--true-white);
+    background-color: var(--prussian-blue);
+    width: 100%;
+    height: 5%;
+    vertical-align: middle;
+    /* no funciona y no sé por qué */
+    font-family: rawengulksans;
+    font-size: 18px;
+    text-align: right;
+    padding: 8px;
+    /* no funciona y no sé por qué */
+
+}
+
+body {
+    position: relative;
+    margin-top: 10%;
+}
+
+h1,
+h2,
+h3 {
+    background-color: var(--prussian-blue);
+    color: var(--true-white);
+    font-family: "freestyle script";
+    font-size: xx-large;
+}
+
+p {
+    font-family: rawengulksans;
+    color: var(--prussian-blue);
+    font-size: medium;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--buff);
+    padding: 8px;
+    font-family: rawengulksans;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
 }
