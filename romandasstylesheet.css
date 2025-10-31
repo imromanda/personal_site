@@ -7,6 +7,8 @@
     --buff: #EED484;
     --true-white: #EEEEEE;
     --night-black: #313131;
+    font-family: rawengulksans;
+    letter-spacing: 2px;
 }
 
 nav {
@@ -15,37 +17,93 @@ nav {
     left: 0;
     color: var(--true-white);
     background-color: var(--prussian-blue);
-    width: 100%;
+    width: 96%;
     height: 5%;
     vertical-align: middle;
-    /* no funciona y no sé por qué */
-    font-family: rawengulksans;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: right;
-    padding: 8px;
-    /* no funciona y no sé por qué */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.navbar-list {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar-list li {
+    height: 100%;
+}
+
+.navbar-list li a {
+    color: white;
+    display: inline-block;
+    height: 96%;
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    text-decoration: none;
+}
+
+.navbar-list li a:visited {
+    color: blue;
+}
+
+.nav-button {
+    color: var(--true-white);
+    padding: 2%;
+
+    /*estados de botones sin terminar*/
+    a:link {
+        color: red;
+    }
 
 }
+
 
 body {
     position: relative;
     margin-top: 10%;
+
 }
 
-h1,
 h2,
 h3 {
     background-color: var(--prussian-blue);
     color: var(--true-white);
-    font-family: "freestyle script";
     font-size: xx-large;
 }
 
 p {
-    font-family: rawengulksans;
     color: var(--prussian-blue);
     font-size: medium;
+    font-weight: 400;
 }
+
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 3%;
+}
+
+
+@media (min-width: 100px) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 100px) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
 
 footer {
     position: fixed;
@@ -58,4 +116,20 @@ footer {
     font-size: 18px;
     text-align: center;
     z-index: 1000;
+}
+
+footer i {
+    padding: 8px;
+}
+
+footer i:link {
+    color: var(--true-white)
+}
+
+footer i:visited {
+    color: var(--paolo-veronese-green)
+}
+
+footer i:hover {
+    color: var(--quinacridone-magenta)
 }
