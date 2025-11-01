@@ -15,53 +15,50 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    color: var(--true-white);
-    background-color: var(--prussian-blue);
     width: 96%;
-    height: 5%;
-    vertical-align: middle;
+    height: 6%;
     font-size: 1rem;
     text-align: right;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.navbar-list {
-    align-items: center;
-    justify-content: flex-end;
-    display: flex;
-    height: 100%;
-    list-style-type: none;
+    padding: 0 2%;
     margin: 0;
+    background-color: var(--prussian-blue);
+
 }
 
-.navbar-list li {
+nav ul {
+    list-style-type: none;
     height: 100%;
+    width: 95%;
+    margin: 0;
+    padding-right: 5%;
+    overflow: hidden;
 }
 
-.navbar-list li a {
-    color: white;
+nav ul li {
     display: inline-block;
-    height: 96%;
-    display: flex;
-    align-items: center;
-    margin: 2%;
-    text-decoration: none;
+    font-weight: 800;
+    height: 100%;
+    padding: 0 3%;
+    width: auto;
 }
 
-.navbar-list li a:visited {
-    color: blue;
-}
-
-.nav-button {
+nav ul li a {
     color: var(--true-white);
-    padding: 2%;
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+}
 
-    /*estados de botones sin terminar*/
-    a:link {
-        color: red;
-    }
+nav ul li a:link {
+    color: var(--true-white);
+}
 
+nav ul li a:visited {
+    color: var(--dark-salmon);
+}
+
+nav ul li a:hover {
+    color: var(--buff);
 }
 
 
@@ -78,6 +75,11 @@ h3 {
     font-size: xx-large;
 }
 
+.intro {
+    position: relative;
+    align-items: center;
+}
+
 p {
     color: var(--prussian-blue);
     font-size: medium;
@@ -86,6 +88,7 @@ p {
 
 
 .profile-pic {
+    float: left;
     width: 200px;
     height: auto;
     border-radius: 3%;
@@ -111,15 +114,16 @@ footer {
     left: 0;
     width: 100%;
     background-color: var(--buff);
-    padding: 8px;
+    padding: 12px;
     font-family: rawengulksans;
     font-size: 18px;
     text-align: center;
+    vertical-align: middle;
     z-index: 1000;
 }
 
 footer i {
-    padding: 8px;
+    padding: 16px;
 }
 
 footer i:link {
