@@ -111,6 +111,7 @@ p {
 footer {
     position: fixed;
     bottom: 0;
+    color: var(--true-white);
     left: 0;
     width: 100%;
     background-color: var(--buff);
@@ -120,20 +121,23 @@ footer {
     text-align: center;
     vertical-align: middle;
     z-index: 1000;
+
 }
 
-footer i {
+
+footer a {
     padding: 16px;
+    margin: 4px;
 }
 
-footer i:link {
-    color: var(--true-white)
+footer a:link {
+    color: var(--prussian-blue)
 }
 
-footer i:visited {
-    color: var(--paolo-veronese-green)
+footer a:visited {
+    color: var(--viridian-green)
 }
 
-footer i:hover {
+footer a:hover {
     color: var(--quinacridone-magenta)
 }
