@@ -8,6 +8,7 @@
     --true-white: #EEEEEE;
     --night-black: #313131;
     font-family: rawengulksans;
+    color: var(--prussian-blue);
     letter-spacing: 2px;
 }
 
@@ -68,28 +69,52 @@ body {
 
 }
 
+h1 {
+
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
 h2,
 h3 {
     background-color: var(--prussian-blue);
     color: var(--true-white);
-    font-size: xx-large;
+    font-size: 100px;
 }
 
+h6 {
+    font-size: x-large;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+}
+
+
 .intro {
+    overflow: auto;
     position: relative;
     align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%
 }
 
 p {
-    color: var(--prussian-blue);
+    color: var(--paolo-veronese-green);
     font-size: medium;
-    font-weight: 400;
+    font-weight: 650;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
 }
 
 
 .profile-pic {
     float: left;
-    width: 200px;
+    width: 400px;
     height: auto;
     border-radius: 3%;
 }
@@ -111,7 +136,6 @@ p {
 footer {
     position: fixed;
     bottom: 0;
-    color: var(--true-white);
     left: 0;
     width: 100%;
     background-color: var(--buff);
