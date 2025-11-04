@@ -46,6 +46,9 @@ nav ul li {
 
 nav ul li a {
     color: var(--true-white);
+    padding: 8px;
+    padding-bottom: 20px;
+    padding-top: 18px;
     text-decoration: none;
     position: relative;
     top: 30%;
@@ -60,7 +63,8 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    color: var(--buff);
+    color: var(--prussian-blue);
+    background-color: var(--buff);
 }
 
 
@@ -101,7 +105,13 @@ h6 {
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10%
+    padding-left: 10%;
+    margin: auto;
+
+}
+
+.about canvas {
+    background-color: #313131;
 }
 
 p {
