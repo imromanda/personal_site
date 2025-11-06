@@ -25,6 +25,7 @@ nav {
     height: 56px;
     text-align: right;
     background-color: var(--prussian-blue);
+    z-index: 100;
 
 }
 
@@ -62,10 +63,14 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
+    color: var(--buff);
+    background-color: var(--paolo-veronese-green);
+}
+
+nav ul li a:active {
     color: var(--prussian-blue);
     background-color: var(--buff);
 }
-
 
 body {
     position: relative;
@@ -92,8 +97,24 @@ h6 {
     margin-inline-end: 0%;
 }
 
+.main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+}
+
 
 .intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+
+    /*
     overflow: auto;
     position: relative;
     align-items: center;
@@ -104,7 +125,8 @@ h6 {
     justify-content: flex-start;
     align-items: center;
     padding-left: 10%;
-    margin: auto;
+    margin: auto; 
+    */
 }
 
 .about {
@@ -113,7 +135,14 @@ h6 {
     margin-bottom: 56px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 20px 5%;
+
+    /*
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    */
     width: 100%;
     overflow: auto;
     background-color: color-mix(in srgb, var(--paolo-veronese-green) 5%, transparent);
