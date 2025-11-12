@@ -7,7 +7,7 @@
     --buff: #EED484;
     --true-white: #EEEEEE;
     --night-black: #313131;
-    font-family: poppins;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     color: var(--prussian-blue);
     /*letter-spacing: 1px;*/
 }
