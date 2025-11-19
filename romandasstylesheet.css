@@ -17,6 +17,10 @@
 
 }
 
+em {
+    color: var(--paolo-veronese-green);
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -30,7 +34,7 @@ nav {
 }
 
 nav ul {
-    height: 106%;
+    height: 100%;
     width: 100%;
     margin: 0;
     overflow: hidden;
