@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech Rebranding Case Study</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #2d3748;
+        background: #f7fafc;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 60px 40px;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .hero .subtitle {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        font-weight: 300;
+      }
+
+      .meta {
+        display: flex;
+        gap: 30px;
+        margin-top: 24px;
+        flex-wrap: wrap;
+      }
+
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .meta-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        margin-bottom: 4px;
+      }
+
+      .meta-value {
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .content {
+        padding: 50px 40px;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-number {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: #667eea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-right: 12px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a202c;
+      }
+
+      .section-content {
+        padding-left: 44px;
+      }
+
+      .section-content p {
+        margin-bottom: 16px;
+        color: #4a5568;
+        font-size: 1rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      .highlight-box {
+        background: #edf2f7;
+        padding: 24px;
+        border-radius: 8px;
+        margin-top: 16px;
+        border-left: 4px solid #667eea;
+      }
+
+      .deliverables {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .deliverable-item {
+        background: #f7fafc;
+        padding: 16px;
+        border-radius: 6px;
+        border: 1px solid #e2e8f0;
+      }
+
+      .deliverable-title {
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+      }
+
+      .deliverable-desc {
+        font-size: 0.85rem;
+        color: #718096;
+        line-height: 1.5;
+      }
+
+      .results-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .results-list li {
+        padding: 12px 0;
+        border-bottom: 1px solid #e2e8f0;
+        color: #4a5568;
+      }
+
+      .results-list li:last-child {
+        border-bottom: none;
+      }
+
+      .results-list li:before {
+        content: "✓";
+        color: #667eea;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+
+      .lessons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .lesson-category {
+        background: #f7fafc;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 3px solid #764ba2;
+      }
+
+      .lesson-category h4 {
+        color: #2d3748;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+      }
+
+      .lesson-category p {
+        color: #4a5568;
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+      }
+
+      .lesson-category p:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline {
+        background: #edf2f7;
+        padding: 16px 20px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        color: #4a5568;
+        margin-top: 16px;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding: 40px 24px;
+        }
+
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+
+        .content {
+          padding: 30px 24px;
+        }
+
+        .section-content {
+          padding-left: 0;
+        }
+
+        .deliverables {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>Fintech Rebranding</h1>
+        <p class="subtitle">Building trust through visual identity redesign</p>
+        <div class="meta">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Junior UX/UI Designer & Team Lead</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-value">~4 months total</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Team</span>
+            <span class="meta-value">1 designer + 2 interns</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">1</span>
+            <h2 class="section-title">Problem</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              The company was launching a PayPal-like payment tool for brands,
+              agencies, and influencers to manage marketing collaboration
+              payments. Despite having a solid product, the inconsistent and
+              unprofessional brand identity made every advertisement and social
+              media post look illegitimate—like a scam.
+            </p>
+
+            <p>
+              This credibility crisis was actively damaging trust with potential
+              clients in an industry where reputation is everything.
+            </p>
+
+            <div class="highlight-box">
+              <strong>My initiative:</strong> I identified this issue within my
+              first two months and convinced the partners to explore rebranding
+              options, despite initial resistance.
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">Process</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              <strong>Research phase:</strong> Led competitive analysis of
+              fintech and payment platforms to understand industry visual
+              standards and trust signals.
+            </p>
+
+            <p>
+              <strong>Initial exploration:</strong> Directed a team of 2 design
+              interns to develop 3 distinct rebranding concepts. These first
+              proposals were rejected as "too bold" for the company, but
+              successfully convinced partners that the current identity was
+              hurting business.
+            </p>
+
+            <p>
+              <strong>Strategic pivot:</strong> Given one week to create a new
+              proposal that maintained some existing brand elements while
+              solving core credibility issues. This constraint actually led to a
+              stronger solution.
+            </p>
+
+            <p>
+              <strong>Implementation:</strong> After approval, created
+              comprehensive brand guidelines and asset libraries, then led the
+              rollout across all company touchpoints.
+            </p>
+
+            <div class="timeline">
+              <strong>Timeline:</strong> ~2 months from initial pitch to final
+              approval, plus several months for complete implementation
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">3</span>
+            <h2 class="section-title">Outcome</h2>
+          </div>
+          <div class="section-content">
+            <div class="deliverables">
+              <div class="deliverable-item">
+                <div class="deliverable-title">Logo System</div>
+                <div class="deliverable-desc">
+                  Scalable, flat-color design with horizontal, vertical, square,
+                  and circular versions
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliverable-title">Color Palette</div>
+                <div class="deliverable-desc">
+                  Web-safe colors with defined usage percentages and
+                  complementary accent color
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliverable-title">Typography</div>
+                <div class="deliverable-desc">
+                  Reduced from 6-7 inconsistent fonts to 2 standardized
+                  typefaces
+                </div>
+              </div>
+              <div class="deliverable-item">
+                <div class="deliverable-title">Asset Library</div>
+                <div class="deliverable-desc">
+                  Icon and image libraries for consistent marketing materials
+                </div>
+              </div>
+            </div>
+
+            <ul class="results-list">
+              <li>
+                Approved by initially skeptical partners who later personally
+                congratulated the team
+              </li>
+              <li>
+                Positive external feedback from clients and industry contacts
+              </li>
+              <li>
+                Notable improvement in social media and website reputation
+                metrics
+              </li>
+              <li>
+                Established visual credibility appropriate for fintech industry
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">4</span>
+            <h2 class="section-title">My Contribution</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              <strong>Strategic identification:</strong> Recognized the brand
+              problem and built the business case for rebranding from scratch.
+            </p>
+
+            <p>
+              <strong>Team leadership:</strong> Directed 2 design interns
+              throughout the entire process, managing workload and maintaining
+              quality standards.
+            </p>
+
+            <p>
+              <strong>Stakeholder persuasion:</strong> Created narrative-driven
+              presentations with storytelling structure to convince resistant
+              leadership.
+            </p>
+
+            <p>
+              <strong>End-to-end design:</strong> Led research, concept
+              development, iteration based on feedback, and final design
+              execution.
+            </p>
+
+            <p>
+              <strong>Documentation & implementation:</strong> Created complete
+              brand guidelines manual and asset library for company-wide
+              rollout.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">5</span>
+            <h2 class="section-title">Lessons Learned</h2>
+          </div>
+          <div class="section-content">
+            <div class="lessons">
+              <div class="lesson-category">
+                <h4>About stakeholder management</h4>
+                <p>
+                  Good ideas aren't enough—you need compelling storytelling to
+                  get buy-in from skeptical decision-makers.
+                </p>
+                <p>
+                  Aim higher than you think stakeholders will accept. Feedback
+                  will naturally bring you down, so starting conservative means
+                  ending up too safe.
+                </p>
+              </div>
+
+              <div class="lesson-category">
+                <h4>About process</h4>
+                <p>
+                  I over-polished early sketches out of fear they'd be dismissed
+                  if they looked "unfinished." Next time I'd trust the iterative
+                  process and spend less time perfecting concepts that are meant
+                  to be rough.
+                </p>
+              </div>
+
+              <div class="lesson-category">
+                <h4>About myself</h4>
+                <p>
+                  I can identify problems others overlook and advocate for
+                  change even when facing institutional resistance.
+                </p>
+                <p>
+                  Rejection stings initially, but I consistently bounce back
+                  with stronger, more refined ideas.
+                </p>
+                <p>
+                  I'm capable of leadership and persuasive communication when
+                  given time to prepare and structure my thoughts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

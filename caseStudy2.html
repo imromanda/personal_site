@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zexel Pay Case Study</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #2d3748;
+        background: #f7fafc;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        padding: 60px 40px;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .hero .subtitle {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        font-weight: 300;
+        margin-bottom: 8px;
+      }
+
+      .hero .context {
+        font-size: 0.95rem;
+        opacity: 0.85;
+      }
+
+      .meta {
+        display: flex;
+        gap: 30px;
+        margin-top: 24px;
+        flex-wrap: wrap;
+      }
+
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .meta-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        margin-bottom: 4px;
+      }
+
+      .meta-value {
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .content {
+        padding: 50px 40px;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-number {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: #2563eb;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-right: 12px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a202c;
+      }
+
+      .section-content {
+        padding-left: 44px;
+      }
+
+      .section-content p {
+        margin-bottom: 16px;
+        color: #4a5568;
+        font-size: 1rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      .challenge-box {
+        background: #fef3c7;
+        padding: 24px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #f59e0b;
+      }
+
+      .challenge-box h4 {
+        color: #92400e;
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+      }
+
+      .challenge-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .challenge-list li {
+        color: #78350f;
+        margin-bottom: 8px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .challenge-list li:before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
+      .user-profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 24px 0;
+      }
+
+      .user-card {
+        background: #f8fafc;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 24px;
+        transition: all 0.3s ease;
+      }
+
+      .user-card:hover {
+        border-color: #2563eb;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+      }
+
+      .user-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      .company-icon {
+        background: #dbeafe;
+      }
+
+      .influencer-icon {
+        background: #fce7f3;
+      }
+
+      .admin-icon {
+        background: #f3e8ff;
+      }
+
+      .user-card h4 {
+        color: #1e293b;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+      }
+
+      .user-card .job {
+        color: #64748b;
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-bottom: 12px;
+      }
+
+      .user-card ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .user-card li {
+        color: #475569;
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+        padding-left: 16px;
+        position: relative;
+      }
+
+      .user-card li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #2563eb;
+        font-weight: bold;
+      }
+
+      .process-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 20px 0;
+      }
+
+      .process-step {
+        background: #f1f5f9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #2563eb;
+      }
+
+      .process-step h4 {
+        color: #1e293b;
+        margin-bottom: 8px;
+        font-size: 1rem;
+      }
+
+      .process-step p {
+        color: #475569;
+        font-size: 0.95rem;
+        margin: 0;
+      }
+
+      .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin: 20px 0;
+      }
+
+      .impact-item {
+        background: #f0fdf4;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #bbf7d0;
+      }
+
+      .impact-item h4 {
+        color: #166534;
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+      }
+
+      .impact-item p {
+        color: #15803d;
+        font-size: 0.88rem;
+        margin: 0;
+      }
+
+      .highlight-box {
+        background: #eff6ff;
+        padding: 24px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #2563eb;
+      }
+
+      .highlight-box strong {
+        color: #1e40af;
+      }
+
+      .lessons-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .lesson-category {
+        background: #faf5ff;
+        padding: 24px;
+        border-radius: 8px;
+        border-left: 3px solid #7c3aed;
+      }
+
+      .lesson-category h4 {
+        color: #5b21b6;
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+      }
+
+      .lesson-category ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .lesson-category li {
+        color: #6b21a8;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .lesson-category li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #7c3aed;
+        font-weight: bold;
+      }
+
+      .callout {
+        background: #fef2f2;
+        border-left: 4px solid #ef4444;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      .callout h4 {
+        color: #991b1b;
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .callout p {
+        color: #7f1d1d;
+        margin: 0;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding: 40px 24px;
+        }
+
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+
+        .content {
+          padding: 30px 24px;
+        }
+
+        .section-content {
+          padding-left: 0;
+        }
+
+        .user-profiles,
+        .impact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>Zexel Pay</h1>
+        <p class="subtitle">Designing for 3 User Types with Competing Needs</p>
+        <p class="context">
+          Payment platform for influencer marketing collaborations
+        </p>
+        <div class="meta">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Solo UX/UI Designer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-value">6 months (March - Sept)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Challenge</span>
+            <span class="meta-value">Multi-user platform design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">1</span>
+            <h2 class="section-title">Problem</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Zexel Pay began as a fintech solution to streamline payments
+              between brands, agencies, and influencers for marketing
+              collaborations. The initial concept focused on a single user
+              interface where companies would manually enter payment details for
+              each influencer.
+            </p>
+
+            <p>
+              As stakeholders wanted to add more functionality, a critical UX
+              problem emerged: cramming features for three fundamentally
+              different user types into one interface would create overwhelming
+              noise and confusion.
+            </p>
+
+            <div class="challenge-box">
+              <h4>The Core Tension</h4>
+              <ul class="challenge-list">
+                <li>
+                  <strong>Companies:</strong> Process bulk payments efficiently,
+                  reduce administrative burden (consolidate thousands of
+                  invoices)
+                </li>
+                <li>
+                  <strong>Influencers:</strong> Get paid quickly with minimal
+                  platform time
+                </li>
+                <li>
+                  <strong>Admins:</strong> Oversight of entire payment flow
+                  between both parties
+                </li>
+              </ul>
+            </div>
+
+            <div class="callout">
+              <h4>Risk if Unresolved</h4>
+              <p>
+                A cluttered platform where each user type would be distracted by
+                irrelevant features, leading to confusion, errors, and
+                abandonment. Users would be forced to navigate through
+                functionality that didn't align with their jobs-to-be-done.
+              </p>
+            </div>
+
+            <div class="highlight-box">
+              <strong>My strategic insight:</strong> I identified early that
+              forcing all functionality into one interface wouldn't work. I
+              proposed separating the experience based on each user's primary
+              job-to-be-done: sending money vs. receiving money.
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">Process</h2>
+          </div>
+          <div class="section-content">
+            <div class="process-steps">
+              <div class="process-step">
+                <h4>Discovery & Requirements Gathering</h4>
+                <p>
+                  Worked with startup team where requirements were unclear.
+                  Spent significant time in 3-hour stakeholder meetings
+                  filtering valuable insights from noise. Collaborated across
+                  product, development, and marketing teams to extract needs.
+                </p>
+              </div>
+
+              <div class="process-step">
+                <h4>Strategic Pivot: Multiple User Profiles</h4>
+                <p>
+                  Advocated for separating user experiences rather than creating
+                  a bloated universal interface. Proposed at least two distinct
+                  types based on jobs-to-be-done: those sending money and those
+                  receiving it. Later added admin super-user profile.
+                </p>
+              </div>
+
+              <div class="process-step">
+                <h4>Information Architecture</h4>
+                <p>
+                  Created extensive IA maps and user flow diagrams. Defined the
+                  three profiles with specific task-focused interfaces. Designed
+                  navigation and feature sets aligned to each user's goals.
+                </p>
+              </div>
+
+              <div class="process-step">
+                <h4>Design & Iteration</h4>
+                <p>
+                  Developed wireframes and prototypes while learning Figma on
+                  the job. Faced resistance from stakeholders who didn't
+                  understand design process—educated on wireframe-to-prototype
+                  progression. Iterated based on cross-functional feedback.
+                </p>
+              </div>
+
+              <div class="process-step">
+                <h4>Usability Testing & Refinement</h4>
+                <p>
+                  Conducted usability tests to identify navigation issues and
+                  programming errors. Made iterative improvements to reduce
+                  friction and clarify user flows.
+                </p>
+              </div>
+            </div>
+
+            <p style="margin-top: 24px">
+              <strong>Timeline:</strong> First designs delivered within one
+              month. First stable version delivered in 6 months.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">3</span>
+            <h2 class="section-title">
+              Solution: Three Distinct User Profiles
+            </h2>
+          </div>
+          <div class="section-content">
+            <div class="user-profiles">
+              <div class="user-card">
+                <div class="user-icon company-icon">🏢</div>
+                <h4>Company Profile</h4>
+                <p class="job">"I need to process bulk payments efficiently"</p>
+                <ul>
+                  <li>CSV upload for bulk payments</li>
+                  <li>Campaign-based batch management</li>
+                  <li>Prepare batches over time, approve when ready</li>
+                  <li>Single consolidated invoice</li>
+                  <li>Payment status monitoring</li>
+                </ul>
+              </div>
+
+              <div class="user-card">
+                <div class="user-icon influencer-icon">✨</div>
+                <h4>Influencer Profile</h4>
+                <p class="job">"I want to get paid quickly and easily"</p>
+                <ul>
+                  <li>Simple payment request creation</li>
+                  <li>Invoice upload functionality</li>
+                  <li>Minimal, streamlined interface</li>
+                  <li>Clear payment status visibility</li>
+                  <li>Fast, low-friction experience</li>
+                </ul>
+              </div>
+
+              <div class="user-card">
+                <div class="user-icon admin-icon">⚙️</div>
+                <h4>Admin Profile</h4>
+                <p class="job">"I need oversight of the entire payment flow"</p>
+                <ul>
+                  <li>Combined company + influencer capabilities</li>
+                  <li>Full system permissions</li>
+                  <li>Cross-user visibility</li>
+                  <li>Payment flow management</li>
+                  <li>Issue resolution tools</li>
+                </ul>
+              </div>
+            </div>
+
+            <p style="margin-top: 24px">
+              By separating these experiences, each user type saw only the
+              features relevant to their tasks, dramatically reducing cognitive
+              load and improving usability.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">4</span>
+            <h2 class="section-title">Outcome & Impact</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              <strong>Delivered:</strong> Complete user flows for three
+              profiles, full screen designs, reusable component library,
+              component specifications, and brand implementation across
+              platform.
+            </p>
+
+            <p style="margin-top: 16px">
+              The platform launched and is still in operation. While final
+              design iterations weren't fully implemented due to team
+              restructuring, the improvements that were implemented showed
+              measurable results:
+            </p>
+
+            <div class="impact-grid">
+              <div class="impact-item">
+                <h4>Reduced Errors</h4>
+                <p>
+                  Significant reduction in human error through clearer flows and
+                  better-grouped concepts
+                </p>
+              </div>
+
+              <div class="impact-item">
+                <h4>Clearer Flows</h4>
+                <p>
+                  Users could anticipate action outcomes and understand
+                  available actions
+                </p>
+              </div>
+
+              <div class="impact-item">
+                <h4>Better Navigation</h4>
+                <p>
+                  Improved menu structure with task-based conceptual grouping
+                </p>
+              </div>
+
+              <div class="impact-item">
+                <h4>Enhanced Copy</h4>
+                <p>
+                  Contextual help for complex terminology, translated platform
+                </p>
+              </div>
+            </div>
+
+            <p style="margin-top: 20px">
+              Positive feedback from users, developers, and stakeholders on all
+              implemented improvements.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">5</span>
+            <h2 class="section-title">My Contribution</h2>
+          </div>
+          <div class="section-content">
+            <p>As the sole designer on a cross-functional startup team:</p>
+
+            <p>
+              <strong>Strategic Design Thinking:</strong> Identified the
+              multi-user problem and proposed profile separation when
+              stakeholders wanted a single interface. Defined three user types
+              based on jobs-to-be-done analysis. Made prioritization decisions
+              to unblock development.
+            </p>
+
+            <p>
+              <strong>Cross-Functional Translation:</strong> Acted as translator
+              between technical, business, and marketing teams. Converted
+              disparate stakeholder input into actionable design requirements.
+              Adapted communication style to each team environment.
+            </p>
+
+            <p>
+              <strong>Design & Systems:</strong> Created all IA, user flows,
+              wireframes, and high-fidelity designs. Designed reusable
+              components using "minimum common multiple" approach—shared
+              foundation with user-specific variations to help junior
+              developers.
+            </p>
+
+            <p>
+              <strong>Documentation & Testing:</strong> Developed complete
+              design specifications. Conducted usability testing and implemented
+              improvements based on findings.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header">
+            <span class="section-number">6</span>
+            <h2 class="section-title">Lessons Learned</h2>
+          </div>
+          <div class="section-content">
+            <div class="lessons-grid">
+              <div class="lesson-category">
+                <h4>About Multi-User Design</h4>
+                <ul>
+                  <li>
+                    Jobs-to-be-done clarity is essential—each user needs
+                    interfaces aligned with specific tasks, not a feature buffet
+                  </li>
+                  <li>
+                    Find connection points where design creates consistent
+                    experiences while respecting different needs
+                  </li>
+                  <li>
+                    Design for reusability with shared components and
+                    user-specific variations
+                  </li>
+                  <li>
+                    Speak each user's language in copy, terminology, and
+                    interface patterns
+                  </li>
+                  <li>
+                    Listen beneath the surface—users express symptoms, not root
+                    needs
+                  </li>
+                </ul>
+              </div>
+
+              <div class="lesson-category">
+                <h4>About Product Design Process</h4>
+                <ul>
+                  <li>
+                    Design balances competing interests: business goals,
+                    technical constraints, and user needs
+                  </li>
+                  <li>
+                    Translation between teams is as important as visual design
+                    work
+                  </li>
+                  <li>
+                    Educating stakeholders on design process is part of the job
+                  </li>
+                </ul>
+              </div>
+
+              <div class="lesson-category">
+                <h4>What I'd Do Differently</h4>
+                <ul>
+                  <li>
+                    Trust professional judgment earlier and fight harder for
+                    user-centered choices
+                  </li>
+                  <li>
+                    Learn metrics tools (Analytics, Hotjar) sooner to support
+                    decisions with evidence
+                  </li>
+                  <li>
+                    Spend less time polishing early concepts—trust the iterative
+                    process
+                  </li>
+                </ul>
+              </div>
+
+              <div class="lesson-category">
+                <h4>Personal Discoveries</h4>
+                <ul>
+                  <li>
+                    I have both creative and analytical thinking—can envision
+                    ambitious solutions and break them into realistic steps
+                  </li>
+                  <li>
+                    I see both details and big picture, and how they interact
+                  </li>
+                  <li>
+                    I'm resilient—rejection stings but I consistently return
+                    with stronger ideas
+                  </li>
+                  <li>
+                    I can lead, communicate persuasively, and advocate for
+                    change against resistance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
