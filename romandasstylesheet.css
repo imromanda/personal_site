@@ -226,10 +226,13 @@ p {
   overflow: auto;
   background-color: color-mix(
     in srgb,
-    var(--paolo-veronese-green) 5%,
+    var(--paolo-veronese-green) 2%,
     transparent
   );
 }
+/*.about h4 {
+  color: var(--dark-salmon);
+}*/
 
 .profile-pic {
   width: 400px;
@@ -242,7 +245,7 @@ p {
   display: block;
   text-align: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 15%;
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
