@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Romanda</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="romandasstylesheet.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="index.html"
+            style="background-color: var(--buff); color: var(--prussian-blue)"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+
+        <li>
+          <a href=" education.html">Education</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main
+      style="
+        /*display: flex;
+        height: 100%;
+        padding: 10vw 2vh;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;*/
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10vw 2vh;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      "
+    >
+      <div>
+        <img
+          src="IMG_20250925_103402_562.jpg"
+          class="profile-pic"
+          alt="Woman with curly and loose hair, smiling outdoors, with trees and sand in the background, under natural light."
+        />
+      </div>
+
+      <div style="margin-left: 2%">
+        <h1 id="salute" style="line-height: 0.5em">Hi there!</h1>
+        <h1 style="color: var(--paolo-veronese-green); line-height: 0.5em">
+          I'm Romanda
+        </h1>
+        <h6 style="margin-top: 20px; margin-bottom: 0; max-width: 80%">
+          Multidisciplinar designer with a knack for pshychology who loves
+          visual communication.
+        </h6>
+        <h6 style="margin-top: 20px; margin-bottom: 0">
+          Now a
+          <span
+            style="
+              background-color: color-mix(
+                in srgb,
+                var(--buff) 30%,
+                transparent
+              );
+            "
+          >
+            Front-end Developer in training</span
+          >
+          too.
+        </h6>
+        <p style="margin-top: 16px">
+          <em>Creativity and experimentation as lifestyle</em>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:imromanda@gmail.com"><i class="bi bi-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/ana-romero-romanda/" target="_blank"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+      <a href="https://www.instagram.com/romandaarte/" target="_blank"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a href="https://github.com/imromanda" target="_blank"
+        ><i class="bi bi-github"></i
+      ></a>
+    </footer>
+
+    <script>
+      const time = new Date().getHours();
+      let greeting;
+      if (time < 5) {
+        greeting = "Good night!";
+      } else if (time < 12) {
+        greeting = "Good morning!";
+      } else if (time < 18) {
+        greeting = "Good afternoon!";
+      } else if (time < 22) {
+        greeting = "Good evening!";
+      } else {
+        greeting = "Good night!";
+      }
+      document.getElementById("salute").innerHTML = greeting;
+    </script>
+  </body>
+</html>

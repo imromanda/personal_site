@@ -279,3 +279,20 @@ footer a:visited {
 footer a:hover {
   color: var(--quinacridone-magenta);
 }
+
+a {
+  padding: 16px;
+  margin: 4px;
+}
+
+a:link {
+  color: var(--prussian-blue);
+}
+
+a:visited {
+  color: var(--viridian-green);
+}
+
+a:hover {
+  color: var(--quinacridone-magenta);
+}
