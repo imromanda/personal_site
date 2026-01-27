@@ -1,0 +1,270 @@
+:root {
+  --prussian-blue: #003349;
+  --viridian-green: #00939d;
+  --paolo-veronese-green: #009d85;
+  --quinacridone-magenta: #934054;
+  --dark-salmon: #eaa794;
+  --buff: #eed484;
+  --true-white: #eeeeee;
+  --night-black: #313131;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: var(--prussian-blue);
+}
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--prussian-blue);
+  padding: 0.1em;
+  height: 3em;
+  text-align: right;
+  z-index: 100;
+  font-family: rawengulksans;
+  font-size: 1.6em;
+  vertical-align: middle;
+}
+
+#navButton {
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  color: var(--true-white);
+  background-color: transparent;
+  border: transparent;
+}
+
+nav a {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+nav a:link {
+  color: var(--true-white);
+}
+nav a:visited {
+  color: var(--true-white);
+}
+
+#burgerMenu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 4em;
+
+  text-align: right;
+  list-style-type: none;
+}
+
+#burgerMenu ul {
+  list-style-type: none;
+}
+#burgerMenu li {
+  margin: 2em 1em;
+}
+
+#burgerMenu a {
+  text-decoration: none;
+  background-color: var(--prussian-blue);
+  color: var(--true-white);
+}
+
+body {
+  position: relative;
+  margin: 0 0 0 0;
+  margin-bottom: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: clamp(2.5em, 5vw, 3.75em);
+  font-weight: 650;
+  line-height: 1.1;
+  margin: 0.2em 0em 0.5em 0em;
+}
+
+h2 {
+  font-size: clamp(2.2em, 4.2vw, 3em);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0.2em 0em 0.5em 0em;
+}
+
+h3 {
+  font-size: clamp(1.8em, 3.5vw, 2.25em);
+  font-weight: 550;
+  line-height: 1.3;
+  margin: 0.2em 0em 0.5em 0em;
+}
+
+h4 {
+  font-size: clamp(1.5em, 2.8vw, 1.75em);
+  font-weight: 450;
+  line-height: 1.4;
+  margin: 0.2em 0em 0.5em 0em;
+}
+
+h5 {
+  font-size: clamp(1.25em, 2.2vw, 1.375em);
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0.5em 0em 0.7em 0em;
+}
+
+h6 {
+  font-size: clamp(1.15em, 2vw, 1.25em);
+  font-weight: 350;
+  line-height: 1.5;
+  margin: 0.5em 0em 0.7em 0em;
+}
+
+p {
+  font-size: clamp(1em, 1.8vw, 1.125em);
+  font-weight: 300;
+  margin: 0.5em 0em 0.7em 0em;
+}
+
+/*blockquote {
+  background-color: color-mix(in srgb, var(--buff) 10%, transparent);
+  padding: 7%;
+}*/
+
+/*h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 0.6em;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.7em;
+}
+
+h5 {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 0.8em;
+}*/
+
+/*h6 {
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+p,
+li {
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 0.8em;
+}*/
+
+/*blockquote {
+  background-color: color-mix(in srgb, var(--buff) 10%, transparent);
+  padding: 7%;
+}*/
+
+#indexMain {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 6em 1em;
+  align-items: center;
+  gap: 1em;
+  overflow: scroll;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.profile-pic {
+  width: 8em;
+  /* margin-top: 6em;*/
+  height: auto;
+  float: left;
+  border-radius: 4%;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  line-height: 0.7em;
+  margin: 0;
+  justify-content: center;
+  gap: 1em;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10em;
+  background-color: var(--buff);
+  padding: 1.5em;
+  font-family: rawengulksans;
+  font-size: 1.6em;
+  text-align: center;
+  vertical-align: middle;
+  z-index: -1000;
+}
+
+footer a:link {
+  color: var(--prussian-blue);
+}
+
+footer a:visited {
+  color: var(--viridian-green);
+}
+
+footer a:hover {
+  color: var(--quinacridone-magenta);
+}
+
+hr {
+  color: var(--prussian-blue);
+}
+
+a {
+  padding: 0.8em;
+}
+
+a:link {
+  color: var(--prussian-blue);
+}
+
+a:visited {
+  color: var(--viridian-green);
+}
+
+a:hover {
+  color: var(--quinacridone-magenta);
+}
