@@ -16,46 +16,81 @@
     />
     <link rel="stylesheet" href="romandasstylesheetM.css" />
     <script>
-      function functionToHide() {
-        var burgerMenuButton = document.getElementById("burgerMenu");
-        console.log(burgerMenuButton.style.display);
+      function toggleMenu() {
+        var nav = document.getElementById("burgerMenu");
+        nav.classList.toggle("isOpen");
+        console.log("toggleMenu", nav);
+      }
+    </script>
+
+    <script>
+      function closeMenuWhenClickOutside(event) {
+        var clickedElement = event.target;
+        var nav = document.getElementById("burgerMenu");
+        console.log(
+          "closeMenuWhenClickOutside",
+          event.target,
+        ); /* Loguea dónde se ha hecho el click*/
+
+        console.log(nav.classList.contains("isOpen"));
+        console.log(clickedElement !== document.getElementById("navButton"));
+        console.log(clickedElement !== document.getElementById("burgerMenu"));
         if (
-          burgerMenuButton.style.display === "none" ||
-          burgerMenuButton.style.display === ""
+          nav.classList.contains("isOpen") &&
+          !document.getElementById("navButton").contains(clickedElement) &&
+          !document.getElementById("burgerMenu").contains(clickedElement)
         ) {
-          burgerMenuButton.style.display = "block";
-        } else {
-          burgerMenuButton.style.display = "none";
+          toggleMenu();
         }
       }
     </script>
+
+    <script>
+      // function toggleMenu() {
+      // var burgerMenuButton = document.getElementById("burgerMenu");
+      // console.log(burgerMenuButton.style.display);
+      // if (
+      // burgerMenuButton.style.display === "none" ||
+      // burgerMenuButton.style.display === ""
+      // ) {
+      // burgerMenuButton.style.display = "block";
+      // } else {
+      // burgerMenuButton.style.display = "none";
+      // }
+      // }
+    </script>
   </head>
-  <body>
+  <body id="bodyPower">
+    <script>
+      var htmlClicks = document.getElementById("bodyPower");
+      htmlClicks.addEventListener("click", closeMenuWhenClickOutside, true);
+    </script>
     <header>
       <nav>
-        <button id="navButton" onclick="functionToHide()">
+        <button id="navButton" onclick="toggleMenu()">
           <i class="bi bi-list"></i>
         </button>
+
+        <div id="burgerMenu">
+          <ul>
+            <li>
+              <a href="indexM.html">Home</a>
+            </li>
+
+            <li>
+              <a href="projectsM.html">Projects</a>
+            </li>
+
+            <li>
+              <a href=" educationM.html">Education</a>
+            </li>
+
+            <li>
+              <a href="aboutM.html">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div id="burgerMenu" class="hide">
-        <ul>
-          <li>
-            <a href="indexM.html">Home</a>
-          </li>
-
-          <li>
-            <a href="projectsM.html">Projects</a>
-          </li>
-
-          <li>
-            <a href=" educationM.html">Education</a>
-          </li>
-
-          <li>
-            <a href="aboutM.html">About</a>
-          </li>
-        </ul>
-      </div>
     </header>
     <main id="indexMain">
       <div id="intro">

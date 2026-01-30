@@ -74,6 +74,9 @@ nav a:visited {
   background-color: var(--prussian-blue);
   color: var(--true-white);
 }
+#burgerMenu.isOpen {
+  display: block;
+}
 
 body {
   position: relative;
