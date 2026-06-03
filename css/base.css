@@ -1,0 +1,98 @@
+:root {
+  --prussian-blue: #003349;
+  --viridian-green: #00939d;
+  --paolo-veronese-green: #009d85;
+  --quinacridone-magenta: #934054;
+  --dark-salmon: #eaa794;
+  --buff: #eed484;
+  --true-white: #eeeeee;
+  --night-black: #313131;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: var(--prussian-blue);
+  /*letter-spacing: 1px;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+em {
+  color: var(--paolo-veronese-green);
+}
+
+body {
+  position: relative;
+  margin: 0 0 0 0;
+  margin-bottom: 15%;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 0.6em;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.7em;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.8em;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.8em;
+}
+
+p,
+li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  background-color: color-mix(in srgb, var(--buff) 10%, transparent);
+  padding: 7%;
+}
+a {
+  padding: 16px;
+  margin: 4px;
+}
+
+a:link {
+  color: var(--prussian-blue);
+}
+
+a:visited {
+  color: var(--viridian-green);
+}
+
+a:hover {
+  color: var(--quinacridone-magenta);
+}

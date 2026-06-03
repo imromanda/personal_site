@@ -1,0 +1,43 @@
+.main-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vw;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+.caseStudy {
+  display: block;
+  /* margin: 56px 0;*/
+  padding: 20px 5%;
+  margin: 5vw 10vh;
+  /* text-align: center;*/
+  /* max-width: 70%;*/
+}
+.caseStudyTitle {
+  display: block;
+}
+.profile-pic {
+  width: 400px;
+  height: auto;
+  float: left;
+  border-radius: 3%;
+}
+
+.cardHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
+  gap: 5rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* se adaptan en pantallas pequeñas */
+}
