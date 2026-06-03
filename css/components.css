@@ -110,6 +110,7 @@ nav ul li a:active {
   padding: 6px 16px;
   cursor: pointer;
   font-size: 13px;
+  text-decoration: none;
   transition: background 0.15s;
 }
 
