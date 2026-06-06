@@ -52,6 +52,11 @@ nav ul li a:active {
   background-color: var(--buff);
 }
 
+.back-link {
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .card {
   background: #fff;
   border: 0.1rem solid #e5e7eb;

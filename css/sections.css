@@ -18,12 +18,10 @@
   display: block;
   /* margin: 56px 0;*/
   padding: 20px 5%;
-  margin: 5vw 0;
-  /* text-align: center;*/
-  /* max-width: 70%;*/
 }
 .caseStudyTitle {
   display: block;
+  gap: 3rem;
 }
 .profile-pic {
   width: 400px;
@@ -39,6 +37,5 @@
   margin: 7rem 0;
   padding-top: 6vw;
   gap: 5rem;
-  /* padding: 2rem; */
-  flex-wrap: wrap; /* se adaptan en pantallas pequeñas */
+  flex-wrap: wrap;
 }
