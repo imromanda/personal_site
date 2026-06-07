@@ -24,21 +24,26 @@
         <li>
           <a
             href="index.html"
+            data-i18n="nav_home"
             style="background-color: var(--buff); color: var(--prussian-blue)"
             >Home</a
           >
         </li>
 
         <li>
-          <a href="projects/index.html">Projects</a>
+          <a href="projects/index.html" data-i18n="nav_projects">Projects</a>
         </li>
 
         <li>
-          <a href=" education.html">Education</a>
+          <a href="education.html" data-i18n="nav_education">Education</a>
         </li>
 
         <li>
-          <a href="about.html">About</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+        </li>
+        <li>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+          <button onclick="setLanguage('es')" class="lang-btn">ES</button>
         </li>
       </ul>
     </nav>
@@ -59,20 +64,31 @@
         <img
           src="assets/Romanda_Selfie.jpg"
           class="profile-pic"
+          data-i18n="home_img_alt"
+          data-i18n-attr="alt"
           alt="Woman with curly and loose hair, smiling outdoors, with trees and sand in the background, under natural light."
         />
       </div>
 
       <div style="max-width: 586px">
         <h1 id="salute" style="line-height: 0.5em">Hi there!</h1>
-        <h1 style="color: var(--paolo-veronese-green); line-height: 0.5em">
+        <h1
+          style="color: var(--paolo-veronese-green); line-height: 0.5em"
+          data-i18n="home_name"
+        >
           I'm Romanda
         </h1>
-        <h6 style="margin-top: 20px; margin-bottom: 0; max-width: 80%">
+        <h6
+          style="margin-top: 20px; margin-bottom: 0; max-width: 80%"
+          data-i18n="home_descriptor"
+        >
           A multidisciplinary designer with a eye for systems and a love for
           visual communication
         </h6>
-        <h6 style="margin-top: 20px; margin-bottom: 0">
+        <h6
+          style="margin-top: 20px; margin-bottom: 0"
+          data-i18n="home_learning"
+        >
           Now learning
           <span
             style="
@@ -87,7 +103,9 @@
           </span>
         </h6>
         <p style="margin-top: 16px">
-          <em>Creativity and experimentation as lifestyle</em>
+          <em data-i18n="home_tagline"
+            >Creativity and experimentation as lifestyle</em
+          >
         </p>
       </div>
     </main>
@@ -105,6 +123,7 @@
       ></a>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script>
       const time = new Date().getHours();
       let greeting;

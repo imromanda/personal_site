@@ -52,6 +52,25 @@ nav ul li a:active {
   background-color: var(--buff);
 }
 
+.lang-btn {
+  background: none;
+  border: 1px solid var(--true-white);
+  color: var(--true-white);
+  text-decoration: none;
+  position: relative;
+  top: 30%;
+  cursor: pointer;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 4px;
+}
+
+.lang-btn:hover {
+  background-color: var(--paolo-veronese-green);
+  border-color: var(--paolo-veronese-green);
+}
+
 .back-link {
   margin-top: 4.5rem;
   margin-bottom: 1.5rem;
