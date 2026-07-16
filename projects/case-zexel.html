@@ -21,16 +21,29 @@
   <body>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="../index.html" data-i18n="nav_home">Home</a>
+        </li>
         <li>
           <a
             href="./index.html"
             style="background-color: var(--buff); color: var(--prussian-blue)"
+            data-i18n="nav_projects"
             >Projects</a
           >
         </li>
-        <li><a href="../education.html">Education</a></li>
-        <li><a href="../about.html">About</a></li>
+
+        <li>
+          <a href="../education.html" data-i18n="nav_education">Education</a>
+        </li>
+
+        <li>
+          <a href="../about.html" data-i18n="nav_about">About</a>
+        </li>
+        <li>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+          <button onclick="setLanguage('es')" class="lang-btn">ES</button>
+        </li>
       </ul>
     </nav>
 
@@ -197,5 +210,6 @@
         ><i class="bi bi-github"></i
       ></a>
     </footer>
+    <script src="js/i18n.js"></script>
   </body>
 </html>
