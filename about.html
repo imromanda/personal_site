@@ -22,38 +22,41 @@
     <nav>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html" data-i18n="nav_home">Home</a>
         </li>
-
         <li>
-          <a href="projects/index.html">Projects</a>
+          <a href="projects/index.html" data-i18n="nav_projects">Projects</a>
         </li>
-
         <li>
-          <a href=" education.html">Education</a>
+          <a href="education.html" data-i18n="nav_education">Education</a>
         </li>
-
         <li>
           <a
             href="about.html"
+            data-i18n="nav_about"
             style="background-color: var(--buff); color: var(--prussian-blue)"
             >About</a
           >
+        </li>
+        <li>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+          <button onclick="setLanguage('es')" class="lang-btn">ES</button>
         </li>
       </ul>
     </nav>
 
     <header style="margin-top: 70px; margin-left: 7%; margin-right: 6%">
-      <p style="margin: 0 56px 0 0"><em>About me</em></p>
-      <h1 style="margin: 1% 0">Designer, artist and perpetual learner</h1>
-      <p style="margin-top: 20px; margin-bottom: 0">
+      <p style="margin: 0 56px 0 0"><em data-i18n="about_tag">About me</em></p>
+      <h1 style="margin: 1% 0" data-i18n="about_title">
+        Designer, artist and perpetual learner
+      </h1>
+      <p style="margin-top: 20px; margin-bottom: 0" data-i18n="about_subtitle">
         Currently learning
         <span
           style="
             background-color: color-mix(in srgb, var(--buff) 30%, transparent);
           "
-        >
-          Front-end Fevelopment</span
+          >Front-end Development</span
         >
       </p>
       <hr />
@@ -70,161 +73,84 @@
             float: left;
             margin-right: 20px;
           "
+          data-i18n="about_img_alt"
+          data-i18n-attr="alt"
+          alt="Romanda"
         />
         <div>
-          <h4 style="padding-left: 24vw">Creativity as my cornerstone</h4>
-          <p>
+          <h4 style="padding-left: 24vw" data-i18n="about_h1">
+            Creativity as my cornerstone
+          </h4>
+          <p data-i18n="about_p1">
             There's never been a time in my life without something in my hands:
             a brush, an idea, or a new way of perceiving the world.
           </p>
-          <p>
-            Creating is
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              how I understand, process, and express</span
-            >
-            my reality.
+          <p data-i18n="about_p2">
+            Creating is how I understand, process, and express my reality.
           </p>
         </div>
 
         <div>
-          <h4 style="padding-left: 24vw">An explorer at heart</h4>
-          <p>
+          <h4 style="padding-left: 24vw" data-i18n="about_h2">
+            An explorer at heart
+          </h4>
+          <p data-i18n="about_p3">
             My path has taken me through painting, sculpture, photography,
             philosophy, psychology, and most recently: front-end development.
           </p>
-          <p>
-            Each discipline taught me that
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              innovation</span
-            >
-            doesn't come from working harder—it
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              comes from connecting unexpected dots</span
-            >
-            and letting curiosity lead the way.
+          <p data-i18n="about_p4">
+            Each discipline taught me that innovation doesn't come from working
+            harder — it comes from connecting unexpected dots and letting
+            curiosity lead the way.
           </p>
         </div>
 
         <div>
-          <h4 style="padding-left: 24vw">Design and empathy</h4>
-          <p>
+          <h4 style="padding-left: 24vw" data-i18n="about_h3">
+            Design and empathy
+          </h4>
+          <p data-i18n="about_p5">
             I believe design should make people's lives better. That's why
             empathy and human connection are always at the core of what I do.
           </p>
-          <p>
+          <p data-i18n="about_p6">
             I'm drawn to challenges where I can blend art and logic, analyzing
-            every variable without losing sight of
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              what truly matters: people.</span
-            >
+            every variable without losing sight of what truly matters: people.
           </p>
         </div>
 
         <div>
-          <h4 style="padding-left: 24vw">When passion strikes, time stops</h4>
-          <p>
+          <h4 style="padding-left: 24vw" data-i18n="about_h4">
+            When passion strikes, time stops
+          </h4>
+          <p data-i18n="about_p7">
             When I'm truly immersed in a project, I enter that deep state of
             flow where my mind explores hundreds of scenarios until I find a
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              solution that feels both logical and emotionally</span
-            >
-            adecuate.
+            solution that feels both logical and emotionally adequate.
           </p>
-          <p>
+          <p data-i18n="about_p8">
             I solve design problems the same way I approach a 2000-piece puzzle:
             study the picture on the box, trust the process, and enjoy finding
             where each piece belongs.
           </p>
-
-          <p>
+          <p data-i18n="about_p9">
             Outside of work, I recharge through painting, puzzles, nature, and
-            music: the things that inspire me and remind me
-            <span
-              style="
-                background-color: color-mix(
-                  in srgb,
-                  var(--buff) 30%,
-                  transparent
-                );
-              "
-            >
-              why I create.</span
-            >
+            music: the things that inspire me and remind me why I create.
           </p>
         </div>
-
-        <!--  <div>
-          <h4 style="padding-left: 24vw">Inspired by the world around me</h4>
-          <p>
-            Outside of work, I recharge through painting, puzzles, and mental
-            challenges. Nature and music inspire me, ground me, and remind me
-            why I create.
-          </p>
-        </div>
-
-        <div>
-          <p
-            style="
-              margin-top: 32px;
-              text-align: center;
-              color: var(--paolo-veronese-green);
-            "
-          >
-            <em
-              >Every project I take on carries reflection, emotion, and a
-              genuine passion for creation.</em
-            >
-          </p>
-        </div>-->
       </section>
 
       <section class="lets-connect">
-        <h4 style="color: var(--paolo-veronese-green)">Let's connect!</h4>
-        <p>
+        <h4
+          style="color: var(--paolo-veronese-green)"
+          data-i18n="about_connect_title"
+        >
+          Let's connect!
+        </h4>
+        <p data-i18n="about_connect_desc">
           I love meeting people who share the same curiosity for design,
-          creativity, and human stories. <br />
-          Whether you want to collaborate, chat about ideas, or just say hi -
-          I’d love to hear from you.
+          creativity, and human stories. Whether you want to collaborate, chat
+          about ideas, or just say hi - I'd love to hear from you.
         </p>
         <h4 style="color: var(--paolo-veronese-green)">imromanda@gmail.com</h4>
       </section>
@@ -242,5 +168,7 @@
         ><i class="bi bi-github"></i
       ></a>
     </footer>
+
+    <script src="js/i18n.js"></script>
   </body>
 </html>

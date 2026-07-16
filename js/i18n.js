@@ -5,7 +5,7 @@ async function loadTranslations(lang) {
 }
 
 function applyTranslations(translations) {
-m  document.querySelectorAll("[data-i18n]").forEach((el) => {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (el.hasAttribute("data-i18n-attr")) {
       const attr = el.getAttribute("data-i18n-attr");

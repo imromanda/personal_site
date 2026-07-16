@@ -11,5 +11,26 @@
   "home_descriptor": "Diseñadora multidisciplinar con ojo para los sistemas y pasión por la comunicación visual",
   "home_learning": "Ahora aprendiendo a construir lo que diseño",
   "home_tagline": "Creatividad y experimentación como estilo de vida",
-  "home_img_alt": "Mujer con el pelo rizado y suelto, sonriendo al aire libre, con árboles y arena de fondo, bajo luz natural."
+  "home_img_alt": "Mujer con el pelo rizado y suelto, sonriendo al aire libre, con árboles y arena de fondo, bajo luz natural.",
+
+  "about_tag": "Sobre mí",
+  "about_title": "Diseñadora, artista y estudiante perpetua",
+  "about_subtitle": "Ahora aprendiendo Desarrollo Front-end",
+  "about_img_alt": "Romanda sugetando un vaso de té matcha",
+  "about_h1": "Creatividad como piedra angular",
+  "about_p1": "No recuerdo una etapa de mi vida sin tener algo entre las manos: un pincel, una idea o una nueva manera de entender el mundo.",
+  "about_h2": "Curiosa por naturaleza",
+  "about_p2": "Crear es mi forma de comprender, procesar y expresar mi realidad.",
+
+  "about_p3": "Mi camino me ha llevado por la pintura, la escultura, la fotografía, la filosofía, la psicología y, más recientemente, el desarrollo front-end.",
+  "about_p4": "Cada disciplina me enseñó que la innovación no nace del esfuerzo por sí solo, sino de conectar ideas inesperadas y dejarse guiar por la curiosidad.",
+  "about_h3": "Diseño y empatía",
+  "about_p5": "Creo que el diseño debe mejorar la vida de las personas. Por eso, la empatía y la conexión humana están siempre en el centro de todo lo que hago.",
+  "about_p6": "Me atraen los retos en los que puedo combinar arte y lógica, analizando cada variable sin perder de vista lo que realmente importa: las personas.",
+  "about_h4": "Cuando hay foco, el tiempo se detiene",
+  "about_p7": "Cuando un proyecto me atrapa de verdad, entro en un profundo estado de flujo en el que mi mente explora cientos de posibilidades hasta encontrar una solución que resulte tan lógica como adecuada desde el punto de vista humano.",
+  "about_p8": "Resuelvo los problemas igual que afronto un puzle de 2.000 piezas: observo la imagen de referencia, confío en el proceso y disfruto encontrando el lugar al que pertenece cada pieza.",
+  "about_p9": "Fuera del trabajo, encuentro mi equilibrio en la pintura, los puzles, la naturaleza y la música: aquello que me inspira y me recuerda por qué disfruto creando.",
+  "about_connect_title": "¡Escríbeme!",
+  "about_connect_desc": "Me encanta conocer a personas que comparten la misma curiosidad por el diseño, la creatividad y las historias humanas. Tanto si quieres colaborar, intercambiar ideas o simplemente saludar, estaré encantada de saber de ti."
 }
