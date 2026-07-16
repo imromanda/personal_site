@@ -71,7 +71,9 @@
       </div>
 
       <div style="max-width: 586px">
-        <h1 id="salute" style="line-height: 0.5em">Hi there!</h1>
+        <h1 id="salute" style="line-height: 0.5em" data-i18n="greeting_morning">
+          Hi there!
+        </h1>
         <h1
           style="color: var(--paolo-veronese-green); line-height: 0.5em"
           data-i18n="home_name"
@@ -124,21 +126,5 @@
     </footer>
 
     <script src="js/i18n.js"></script>
-    <script>
-      const time = new Date().getHours();
-      let greeting;
-      if (time < 5) {
-        greeting = "Good night!";
-      } else if (time < 12) {
-        greeting = "Good morning!";
-      } else if (time < 18) {
-        greeting = "Good afternoon!";
-      } else if (time < 22) {
-        greeting = "Good evening!";
-      } else {
-        greeting = "Good night!";
-      }
-      document.getElementById("salute").innerHTML = greeting;
-    </script>
   </body>
 </html>

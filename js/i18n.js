@@ -5,11 +5,9 @@ async function loadTranslations(lang) {
 }
 
 function applyTranslations(translations) {
-  // Traducir elementos con data-i18n (contenido de texto)
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
+m  document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (el.hasAttribute("data-i18n-attr")) {
-      // Traducir atributos (como alt)
       const attr = el.getAttribute("data-i18n-attr");
       el.setAttribute(attr, translations[key]);
     } else {
@@ -18,13 +16,31 @@ function applyTranslations(translations) {
   });
 }
 
+function applyGreeting(translations) {
+  const time = new Date().getHours();
+  let greetingKey;
+  if (time < 5) {
+    greetingKey = "greeting_night";
+  } else if (time < 12) {
+    greetingKey = "greeting_morning";
+  } else if (time < 18) {
+    greetingKey = "greeting_afternoon";
+  } else if (time < 22) {
+    greetingKey = "greeting_evening";
+  } else {
+    greetingKey = "greeting_night";
+  }
+  const salute = document.getElementById("salute");
+  if (salute) salute.textContent = translations[greetingKey];
+}
+
 async function setLanguage(lang) {
   const translations = await loadTranslations(lang);
   applyTranslations(translations);
+  applyGreeting(translations);
   localStorage.setItem("lang", lang);
   document.documentElement.setAttribute("lang", lang);
 }
 
-// Al cargar la página, usar el idioma guardado o inglés por defecto
 const savedLang = localStorage.getItem("lang") || "en";
 setLanguage(savedLang);
