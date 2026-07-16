@@ -22,23 +22,28 @@
     <nav>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html" data-i18n="nav_home">Home</a>
         </li>
 
         <li>
-          <a href="projects/index.html">Projects</a>
+          <a href="projects/index.html" data-i18n="nav_projects">Projects</a>
         </li>
 
         <li>
           <a
             href=" education.html"
+            data-i18n="nav_education"
             style="background-color: var(--buff); color: var(--prussian-blue)"
             >Education</a
           >
         </li>
 
         <li>
-          <a href="about.html">About</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+        </li>
+        <li>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+          <button onclick="setLanguage('es')" class="lang-btn">ES</button>
         </li>
       </ul>
     </nav>
@@ -320,5 +325,6 @@
         ><i class="bi bi-github"></i
       ></a>
     </footer>
+    <script src="js/i18n.js"></script>
   </body>
 </html>
