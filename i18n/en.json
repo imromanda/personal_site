@@ -31,5 +31,16 @@
   "about_p8": "I solve design problems the same way I approach a 2000-piece puzzle: study the picture on the box, trust the process, and enjoy finding where each piece belongs.",
   "about_p9": "Outside of work, I recharge through painting, puzzles, nature, and music: the things that inspire me and remind me why I create.",
   "about_connect_title": "Let's connect!",
-  "about_connect_desc": "I love meeting people who share the same curiosity for design, creativity, and human stories. Whether you want to collaborate, chat about ideas, or just say hi - I'd love to hear from you."
+  "about_connect_desc": "I love meeting people who share the same curiosity for design, creativity, and human stories. Whether you want to collaborate, chat about ideas, or just say hi - I'd love to hear from you.",
+
+  "projects_card1_tag": "Case Study 1 - Rebranding",
+  "projects_card1_title": "How I convinced skeptical partners to rebrand a fintech — and why they had to",
+  "projects_card1_desc": "Full rebrand for a payment platform in the influencer marketing space",
+  "projects_card2_tag": "Case Study 2 - Zexel Users",
+  "projects_card2_title": "Three users, one product, no instruction manual",
+  "projects_card2_desc": "Designing a payment platform for users with radically different needs",
+  "projects_card3_tag": "Case Study 3 - The Lazy Lightning",
+  "projects_card3_title": "How wanting to do less work led to better results",
+  "projects_card3_desc": "And taught me to redesign systems instead of pushing harder",
+  "projects_card_btn": "Read more"
 }

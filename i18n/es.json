@@ -32,5 +32,16 @@
   "about_p8": "Resuelvo los problemas igual que afronto un puzle de 2.000 piezas: observo la imagen de referencia, confío en el proceso y disfruto encontrando el lugar al que pertenece cada pieza.",
   "about_p9": "Fuera del trabajo, encuentro mi equilibrio en la pintura, los puzles, la naturaleza y la música: aquello que me inspira y me recuerda por qué disfruto creando.",
   "about_connect_title": "¡Escríbeme!",
-  "about_connect_desc": "Me encanta conocer a personas que comparten la misma curiosidad por el diseño, la creatividad y las historias humanas. Tanto si quieres colaborar, intercambiar ideas o simplemente saludar, estaré encantada de saber de ti."
+  "about_connect_desc": "Me encanta conocer a personas que comparten la misma curiosidad por el diseño, la creatividad y las historias humanas. Tanto si quieres colaborar, intercambiar ideas o simplemente saludar, estaré encantada de saber de ti.",
+
+  "projects_card1_tag": "Estudio de caso 1 - Rediseño de marca",
+  "projects_card1_title": "Cómo convencí a unos socios escépticos de hacer un rediseño y por qué había que hacerlo",
+  "projects_card1_desc": "Rediseño completo para una plataforma de pagos de influencer marketing",
+  "projects_card2_tag": "Estudio de caso 2 - Usuarios Zexel",
+  "projects_card2_title": "Tres usuarios, un producto, ningún manual de instrucciones",
+  "projects_card2_desc": "Diseñando una plataforma de pagos para usiarios con necesidades completamente diferentes",
+  "projects_card3_tag": "Estudio de caso 3 - El Relámpago de la Vagancia",
+  "projects_card3_title": "Cómo el querer hacer menos trabajo acabó dando mejores resultados",
+  "projects_card3_desc": "Y me enseñó cómo rediseñar sistemas en lugar de presionarme más",
+  "projects_card_btn": "Leer más"
 }
