@@ -70,5 +70,59 @@
   "zexel_s5_h3": "What I'd do differently:",
   "zexel_s5_li5": "Trust my judgment earlier, learn metrics tools sooner, polish less in early stages.",
   "zexel_s5_h4": "About myself:",
-  "zexel_s5_li6": "I blend creative and analytical thinking, see details and big picture, stay resilient, and advocate effectively."
+  "zexel_s5_li6": "I blend creative and analytical thinking, see details and big picture, stay resilient, and advocate effectively.",
+
+  "rebrand_case_label": "Case 1 — Visual identity",
+  "rebrand_title": "How I convinced skeptical partners to rebrand a fintech — and why they had to",
+  "rebrand_subtitle": "Full rebrand for a payment platform in the influencer marketing space",
+
+  "rebrand_s1_title": "1. Problem",
+  "rebrand_s1_p1": "The company had a solid product: a payment tool for managing collaborations between brands, agencies, and influencers. The problem was that their visual identity made every ad and social post look like a scam. In an industry where credibility is everything, the brand was actively hurting the business.",
+  "rebrand_s1_quote": "Nobody inside the company had identified this as a problem until I joined. Within two months as a junior UX/UI designer, I built the case and convinced the partners to explore a rebrand — despite significant initial resistance.",
+
+  "rebrand_s2_title": "2. Process",
+  "rebrand_s2_p1": "I led a team of two design interns over three months. We researched fintech competitors, developed three distinct concepts, and I presented them with a narrative focused on business impact, not just aesthetics.",
+  "rebrand_s2_p2": "The first proposals were rejected as \"too bold.\" But the presentation did land — it convinced the partners that the current identity was a real problem. We were given one week to come back with a new proposal: same starting point, different destination. That final version was the strongest of all.",
+  "rebrand_s2_quote": "Key takeaway: aim higher than you think they'll accept. Feedback always brings you down.",
+
+  "rebrand_s3_title": "3. Outcome",
+  "rebrand_s3_p1": "Full visual system overhaul: scalable logo in four versions (horizontal, vertical, square, circular), web-safe color palette with defined usage percentages, typography reduced from 6–7 inconsistent fonts to 2, and a resource library for marketing. Social media and website reputation improved noticeably. The partners, who had resisted any change at the start, ended up congratulating the team.",
+
+  "rebrand_s4_title": "4. My specific contribution",
+  "rebrand_s4_p1": "I identified the problem, built the business case, led the team, drove the process end-to-end, and created the brand guidelines and all implementation assets. I also crafted the presentation narrative — and learned that without a good story, even gold goes unnoticed.",
+
+  "rebrand_s5_title": "5. Lessons learned",
+  "rebrand_s5_h1": "About stakeholder management:",
+  "rebrand_s5_li1": "Compelling storytelling gets buy-in where good ideas alone don't.",
+  "rebrand_s5_li2": "Aim higher than expected acceptance — feedback always brings you down.",
+  "rebrand_s5_h2": "About the process:",
+  "rebrand_s5_li3": "I over-polished early sketches fearing dismissal. I'd now trust the iterative process more.",
+  "rebrand_s5_h3": "About myself:",
+  "rebrand_s5_li4": "I identify problems others overlook and advocate for change despite resistance.",
+  "rebrand_s5_li5": "Rejection stings but I consistently bounce back with stronger ideas.",
+  "rebrand_s5_li6": "I'm capable of leadership and persuasive communication when prepared.",
+
+  "lightning_case_label": "Case 3 — Thinking system",
+  "lightning_title": "How wanting to do less work led to better results",
+  "lightning_subtitle": "And taught me to redesign systems instead of pushing harder",
+
+  "lightning_s1_title": "1. The Situation",
+  "lightning_s1_p1": "Fine arts degree: dozens of simultaneous projects across painting, sculpture, photography, printmaking — each requiring finished physical work plus a full written process journal. First three years, I worked more hours than the calendar had. No Christmas break, mediocre output across the board, and a portfolio of completely unrelated pieces with no coherence.",
+  "lightning_s1_quote": "The real problem wasn't the workload. It was that I was choosing each project's theme on the day I had to start it — and then brute-forcing my way through with maximum effort and no strategy.",
+
+  "lightning_s2_title": "2. The Shift",
+  "lightning_s2_p1": "In my fourth year, I stopped. Instead of launching straight into making things, I gathered every project brief from every subject and sat with them. I didn't touch a brush for weeks — well into late November — while I looked for a single underlying concept that could serve all of them at once.",
+  "lightning_s2_p2": "That discomfort of not starting was real. But I pushed through it and found the thread: one conceptual project that could be adapted across all subjects and serve as the theoretical foundation for my final degree project.",
+  "lightning_s2_quote": "The instinct to pause, map requirements, find the underlying structure, and design a system instead of grinding harder — that's been there since before I knew it had a name.",
+
+  "lightning_s3_title": "3. The Result",
+  "lightning_s3_p1": "Before",
+  "lightning_s3_p2": "No Christmas. Scattered output. Maximum effort, mediocre results. A portfolio that said nothing coherent.",
+  "lightning_s3_p3": "After",
+  "lightning_s3_p4": "First Christmas in four years. Less physical work, more focused output. A cohesive body of work that fed directly into my final project.",
+
+  "lightning_s4_title": "4. Why This Matters",
+  "lightning_s4_p1": "I didn't learn this in a UX course. I figured it out because I was too tired to keep working the same broken way.",
+  "lightning_s4_p2": "I call it the laziness lightning bolt: the moment you realize that working smarter isn't a shortcut, it's just a better way to build.",
+  "lightning_s4_p3": "This is how I approach every complex problem: pause, map the requirements, find the underlying structure, then design the system."
 }
